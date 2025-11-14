@@ -7,7 +7,7 @@ import { testConnection } from './db.js'
 dotenv.config()
 
 const app = express()
-const PORT = Number(process.env.SERVER_PORT || 4000)
+const PORT = Number(process.env.PORT || 4000)
 const CLIENT_URL = process.env.CLIENT_URL || 'http://localhost:5173'
 
 app.use(
